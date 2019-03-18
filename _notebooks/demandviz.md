@@ -124,7 +124,7 @@ plt.show()
 ```
 
 
-![png](output_9_0.png)
+![png](/images/notebooks_data/output_9_0.png)
 
 
 Note that we need to flip the y-axis, since image pixel positions are enumerated with the origin at the top left. Of course, the equations in the MapOverlay class could be adjusted to place the origin at the bottom left, but nah.
@@ -192,6 +192,6 @@ ani.save('belltown.mp4', writer = FFwriter)
 
 
 <video width="640" height="480" controls>
-  <source src="belltown.mp4" type="video/mp4">
+  <source src="/images/notebooks_data/belltown.mp4" type="video/mp4">
 </video>
 
