@@ -4,11 +4,8 @@ collection: publications
 permalink: /notebooks/demandviz
 excerpt: 'In this notebook we convert WSG84 latitude-longitudes to a 2-D web Mercator projection for the purpose of animating demand for curbside parking in downtown Seattle over time. The notebook can be viewed online and the full code and dataset can be downloaded below.'
 date: 2016-08-01
-venue: 'Journal 1'
 paperurl: 'https://github.com/cpatdowling/demandviz'
 ---
-
-## Visualizing curbside parking demand in Seattle's Belltown neighborhood
 
 <img src="http://i.imgur.com/WsRieiC.gif">
 
