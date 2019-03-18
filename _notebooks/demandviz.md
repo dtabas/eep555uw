@@ -2,7 +2,7 @@
 title: "Visualizing curbside parking demand in Seattles Belltown neighborhhod"
 collection: publications
 permalink: /notebooks/demandviz
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'In this notebook we convert WSG84 latitude-longitudes to a 2-D web Mercator projection for the purpose of animating demand for curbside parking in downtown Seattle over time. The notebook can be viewed online and the full code and dataset can be downloaded below.'
 date: 2016-08-01
 venue: 'Journal 1'
 paperurl: 'https://github.com/cpatdowling/demandviz'
@@ -12,9 +12,9 @@ paperurl: 'https://github.com/cpatdowling/demandviz'
 
 <img src="http://i.imgur.com/WsRieiC.gif">
 
-Parking downtown sucks. We're <a ref="http://www.dailyuw.com/science/article_89372086-9f07-11e6-84c7-d7ada9ba17cf.html"> working on it </a>. But in the process of trying to make it better, we developed a need to visualize the demand for curbside parking over time. Using Seattle Department of Transportation transaction data from curbside parking meters, we can get an estimate of how many people are actively parking along a particular block at any time. I wanted to plot this demand on a map layer and animate the change in demand over time and space. So, as Saul Goodman would say, let's get down to brass tacks.
+Parking downtown sucks. We're [working on it](http://www.dailyuw.com/science/article_89372086-9f07-11e6-84c7-d7ada9ba17cf.html). But in the process of trying to make it better, we developed a need to visualize the demand for curbside parking over time. Using Seattle Department of Transportation transaction data from curbside parking meters, we can get an estimate of how many people are actively parking along a particular block at any time. I wanted to plot this demand on a map layer and animate the change in demand over time and space. So, as Saul Goodman would say, let's get down to brass tacks.
 
-We'll look at at winter of 2015 where I've already preprocessed parking transaction data to get an idea of hourly demand for parking spaces each day of the week. In addition to demand on a block by block basis, we need the number of available parking spaces along a block, as well as their latitude and longitude. All of this data is available through Seattle's city government <a ref="https://data.seattle.gov/"> data portal </a>.
+We'll look at at winter of 2015 where I've already preprocessed parking transaction data to get an idea of hourly demand for parking spaces each day of the week. In addition to demand on a block by block basis, we need the number of available parking spaces along a block, as well as their latitude and longitude. All of this data is available through Seattle's city government [data portal](https://data.seattle.gov/).
 
 I'll import the preprocessed data, probably not stored in the most efficient manner; fortunately data management and organization is not on the docket.
 
@@ -39,7 +39,7 @@ import numpy as np
 meanLatLongs = np.loadtxt("meanLatLongs.txt", delimiter=",")
 ```
 
-One painful step is needing to convert <a ref="https://en.wikipedia.org/wiki/World_Geodetic_System#A_new_World_Geodetic_System:_WGS_84">WSG84</a> spheroid latitude, longitude coordinates to an x, y position in a 2-D Mercator projection used in web-based map <a ref="https://en.wikipedia.org/wiki/Web_Mercator"> applications like Google Maps</a>. I've defined a class that, given a set of latitude and longitude coordinate pairs, these pairs can be plotted in an x, y scatter plot over an embedded image of a map. This sidesteps the need to access the Google Maps API, and turns out to be more flexible (and easier) when developing animations over a fixed region. To make things even nicer, this class runs in native Python 2.7+, without NumPy
+One painful step is needing to convert [WSG84](https://en.wikipedia.org/wiki/World_Geodetic_System#A_new_World_Geodetic_System:_WGS_84) spheroid latitude, longitude coordinates to an x, y position in a 2-D Mercator projection used in web-based map [applications like Google Maps](https://en.wikipedia.org/wiki/Web_Mercator). I've defined a class that, given a set of latitude and longitude coordinate pairs, these pairs can be plotted in an x, y scatter plot over an embedded image of a map. This sidesteps the need to access the Google Maps API, and turns out to be more flexible (and easier) when developing animations over a fixed region. To make things even nicer, this class runs in native Python 2.7+, without NumPy
 
 Copy pasta, my friends. Example usage below.
 
@@ -138,7 +138,7 @@ plt.show()
 
 Note that we need to flip the y-axis, since image pixel positions are enumerated with the origin at the top left. Of course, the equations in the MapOverlay class could be adjusted to place the origin at the bottom left, but nah.
 
-Now we can simply take advantage of animation packages built on top of Matplotlib to create animated data visualizations on a static screencap of Google Maps. These animations were adapted from <a ref="http://jeffskinnerbox.me/notebooks/javascript-viewer-for-matplotlib-animations.html"> here </a> and the JSAnimation package from fellow UW Husky, Jake VanderPlas
+Now we can simply take advantage of animation packages built on top of Matplotlib to create animated data visualizations on a static screencap of Google Maps. These animations were adapted from [here](http://jeffskinnerbox.me/notebooks/javascript-viewer-for-matplotlib-animations.html) and the JSAnimation package from fellow UW Husky, Jake VanderPlas
 
 
 ```python
