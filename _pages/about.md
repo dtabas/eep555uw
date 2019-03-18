@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm currently a Ph.D. candidate at the University of Washington's department of Electrical and Computer Engineering under the advisement of [Baosen Zhang](https://zhangbaosen.github.io/). My current research is in the application of machine learning to civil, infrastructural engineering primarily in transportation and energy. Previously I was a staff data scientist at Pacific Northwest National Laboratory working on a broad portfolio. This github.io homepage was gratefully forked from [academicpages template](https://github.com/academicpages/academicpages.github.io)
+I'm currently a Ph.D. candidate at the University of Washington's department of Electrical and Computer Engineering under the advisement of [Baosen Zhang](https://zhangbaosen.github.io/). My current research is in the application of machine learning to civil, infrastructural engineering primarily in transportation and energy. Previously I was a staff data scientist at Pacific Northwest National Laboratory leveraging high performance computing in a broad portfolio of project work. 
 
 
 Site-wide configuration
