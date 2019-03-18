@@ -1,5 +1,5 @@
 ---
-title: "Visualizing curbside parking demand in Seattles Belltown neighborhhod"
+title: "Visualizing curbside parking demand in Seattles Belltown neighborhhood"
 collection: publications
 permalink: /notebooks/demandviz
 excerpt: 'In this notebook we convert WSG84 latitude-longitudes to a 2-D web Mercator projection for the purpose of animating demand for curbside parking in downtown Seattle over time. The notebook can be viewed online and the full code and dataset can be downloaded below.'
@@ -171,14 +171,6 @@ def animate(i):
 animation.FuncAnimation(fig, animate, init_func=init,
                         frames=len(times), interval=200, blit=False)
 ```
-
-    IOPub data rate exceeded.
-    The notebook server will temporarily stop sending output
-    to the client in order to avoid crashing it.
-    To change this limit, set the config variable
-    `--NotebookApp.iopub_data_rate_limit`.
-
-
 
 ```python
 ani = animation.FuncAnimation(fig, animate, init_func=init,
