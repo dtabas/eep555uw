@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Chase Dowling's Homepage"
+title                    : ""
 title_separator          : "-"
 name                     : &name "Chase Dowling"
 description              : &description "Electrical and Computer Engineering Ph.D. Candiate at the University of Washington"
