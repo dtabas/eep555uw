@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -84,7 +84,7 @@ author:
   avatar           : "profile.png"
   bio              : "I'm a Ph.D. Candidate in the Electrical and Computer Engineering department at the University of Washington. My resarch focuses on applications of machine learning to civil, infrastructural engineering primarily in transportation and energy."
   location         : "Seattle, Washington"
-  employer         : "University of Washington
+  employer         : "University of Washington"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=0NnjG2IAAAAJ&hl=en"
   email            :
