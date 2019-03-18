@@ -228,6 +228,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _notebooks
+  - scope:
+      path: ""
+      type: notebooks
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _portfolio
   - scope:
       path: ""
