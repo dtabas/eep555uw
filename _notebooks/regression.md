@@ -70,7 +70,7 @@ print(A.dot(b))
 
 And we can solve matrix equations
 
-$Ax = b$<p>
+$Ax = b$
 $x = A^{-1}b$
 
 
