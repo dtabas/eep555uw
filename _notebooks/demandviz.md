@@ -7,7 +7,7 @@ date: 2016-08-01
 paperurl: 'https://github.com/cpatdowling/demandviz'
 ---
 
-<img src="http://i.imgur.com/WsRieiC.gif">
+![gif](/images/notebooks_data/parking.gif)
 
 Parking downtown sucks. We're [working on it](http://www.dailyuw.com/science/article_89372086-9f07-11e6-84c7-d7ada9ba17cf.html). But in the process of trying to make it better, we developed a need to visualize the demand for curbside parking over time. Using Seattle Department of Transportation transaction data from curbside parking meters, we can get an estimate of how many people are actively parking along a particular block at any time. I wanted to plot this demand on a map layer and animate the change in demand over time and space. So, as Saul Goodman would say, let's get down to brass tacks.
 

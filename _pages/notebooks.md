@@ -4,6 +4,7 @@ title: "Notebooks"
 permalink: /notebooks/
 author_profile: true
 ---
+Notebooks are best viewed in a desktop browser.
 
 {% include base_path %}
 
