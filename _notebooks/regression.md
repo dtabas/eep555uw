@@ -8,9 +8,6 @@ paperurl: 'https://github.com/cpatdowling/ee559'
 ---
 
 ## Linear Regression and Gradient Descent
-author: Chase Dowling (TA)
-contact: cdowling@uw.edu
-course: EE PMP 559, Spring '19
 
 In this notebook we'll review how to perform linear and regression as an introduction to using Python's numerical library NumPy. NumPy is very similar to MATLAB but is open source and has broader utilitzation in data science than R as many useful tools utilize or are compatible NumPy. To demonstrate, we'll solve the regression problem using a technique called gradient descent with code we write in NumPy, and then with CVX, a powerful optimization library which has a NumPy compatible python API. Becoming comfortable with NumPy opens up a wide range data analysis techniques and visualization tools.
 
