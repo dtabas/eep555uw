@@ -22,7 +22,7 @@ First we'll review [linear regression](https://en.wikipedia.org/wiki/Linear_regr
 
 <center>Fig. 1</center> | <center>Fig. 2</center>
 - | - 
-![png](/images/notebook_data/linex1.png) | ![png](/images/notebook_data/linex2.png)
+![png](/images/notebooks_data/linex1.png) | ![png](/images/notebooks_data/linex2.png)
 
 Linear regression works by minimizing a _loss function_ to find the "best fit". A loss function measures the error between a true, known value $y$ and the value of our estimate---the output of the linear model---$\hat{y}$. If the loss function $\mathcal{L}$ is squared error, then for $N$ data samples for example:
 
