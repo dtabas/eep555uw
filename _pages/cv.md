@@ -11,30 +11,22 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Mathematics, University of Maryland, College Park, 2012
+* Ph.D in Electrical and Computer Engineering, University of Washington, 2019 (expected)
 
-Work experience
+Employment
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Data Scientist (2012---present, on educational leave) 
+  * Pacific Northwest National Laboratory
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+* Graduate Research/Teaching Assistant (2015---2019)
+  * University of Washington
+  * Supervisor: Baosen Zhang
+
+Service and leadership
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Cofounder of the Maryland Men's Crew Alumni Association, 501(c)(3) non-profit established in 2014 to financially support the University of Maryland's men's crew program.
+* Communications Fellow, Pacific Science Center's Science Communications program
 
 Publications
 ======
@@ -48,12 +40,3 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
