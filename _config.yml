@@ -180,7 +180,7 @@ collections:
   notebooks:
     output: true
     permaline: /:collection/:path/
-  portfolio:
+  posts:
     output: true
     permalink: /:collection/:path/
   talks:

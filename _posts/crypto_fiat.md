@@ -1,7 +1,7 @@
 ---
 title: 'Cryptocurrency: Fiat or Not?'
 date: 2014-11-22
-permalink: /posts/2014/11/crypto_fiat
+permalink: /posts/2014/11/crypto_fiat/
 tags:
   - blog
 ---
