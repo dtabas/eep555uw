@@ -348,7 +348,7 @@ In the above examples, all of the noise was sampled from a [Guassian distributio
 
 ### \#2
 
-Oftentimes our data will have outliers, genrated by faulty sensor measurements or random fluctuations caused by something external to the system we're analyzing. Here we generate some data with a large outlier. Find the line of best fit for the data with the outlier and without the outlier using the ordinary least squares solution and discuss why the results look different. Describe what we could do to deal with the outlying data.
+Oftentimes our data will have outliers, genrated by faulty sensor measurements or random fluctuations caused by something external to the system we're analyzing. Here we generate some data with a large outlier. Find the line of best fit for the data with the outlier and without the outlier using the ordinary least squares solution and discuss why the results look different. Plot both lines with a legend in the same graphic. Describe what we could do to deal with the outlying data.
 
 
 ```python
@@ -383,7 +383,7 @@ plt.show()
 
 ### \#3
 
-We've generated some data with an unknown basis function. Your job is to select what you think the basis function is, and use gradient descent to learn the appropriate weight to find the line of best fit for the data. Below is some code to load and plot the data to get you started.
+We've generated some data with an unknown basis function. Your job is to select what you think the basis function is, and use gradient descent to learn the appropriate weight to find the line of best fit for the data. Below is some code to load and plot the data to get you started. Plot the line of best fit.
 
 
 ```python
