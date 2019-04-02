@@ -329,8 +329,7 @@ plt.scatter(X_poly,Y_poly)
 plt.show()
 ```
 
-
-<center>![png](/images/notebooks_data/regression_5.png)</center>
+![png](/images/notebooks_data/regression_5.png)
 
 
 ### Assignment questions
