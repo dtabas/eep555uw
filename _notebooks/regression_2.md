@@ -2,7 +2,7 @@
 title: "L1, L2 Loss Functions and Regression"
 collection: publications
 permalink: /notebooks/regression
-excerpt: 'This notebook explores how choosing different loss functions influences the results of linear regression, and how to incorporate bias. EE PMP 559 \'Data Science for Power Systems\', Spring 2019'
+excerpt: 'This notebook explores how choosing different loss functions influences the results of linear regression, and how to incorporate bias. EE PMP 559 Data Science for Power Systems, Spring 2019'
 date: 2019-04-08
 paperurl: 'https://github.com/cpatdowling/ee559'
 ---
@@ -22,7 +22,7 @@ This may look familiar; this is essentially the equation of the magnitude of a v
 where each $v_{i}$ is a dimension of the vector $v$. If the error $e = y - \hat{y}$, then the loss function $\mathcal{L} = ||e||^{2}_{2}$ is the square of the L2 norm of the vector of errors. It's helpful to represent data as matrices, and errors as vectors, as there are many norms we can choose from to be loss functions. Using, and as we will see, _combining_ different norms have different effects on the outcomes of the regression problem. We'll look at a few in this notebook.
 
 <center>Fig. 1</center>
-<img src="figs/outlier.png" alt="Effect of an outlier on the OLS solution without a bias term" width="400"/>
+![alt](/images/notebooks_data/outlier.png)
 
 In the previous homework assignment, we saw how a single outlier has a large effect on the value of the linear model's coefficients that we solve for, like in Fig. 1 above. That's because the loss of a single data point increases _as the square_ of the difference between the model's output and the data value. The outlier's influence comes from the power of the difference, so let's reduce the power; the L1-norm is defined as,
 
@@ -30,8 +30,8 @@ In the previous homework assignment, we saw how a single outlier has a large eff
 
 The L1-norm (sometimes called the Taxi-cab or Manhattan distance) is the sum of the absolute values of the dimensions of the vector. It turns out that if we just use the L1-norm as our loss function, however, there is no unique solution to the regression problem, but we _can_ combine it with the ordinary least squares regression problem. We can imagine that between two points A and B there's a unique shortest straight line distance (with distance equal to the L2-norm), but multiple paths with equal Manhattan distance (the sum of the absolute values of the x component and y component), as illustrated in Fig. 2.
 
-<center>Fig. 2: [Image source](https://en.wikipedia.org/wiki/Taxicab_geometry#/media/File:Manhattan_distance.svg)</center>
-<img src="figs/taxicab.png" alt="Taxi-cab metric drawing from Wikipedia" width="300"/>
+<center>Fig. 2: [Image source](https://en.wikipedia.org/wiki/Taxicab_geometry)</center>
+![alt](/images/notebooks_data/taxicab.png =200x)
 
 The LASSO regression problem uses a loss function that combines the L1 and L2 norms, where the loss function is equal to,
 
