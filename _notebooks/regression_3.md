@@ -35,11 +35,11 @@ In power engineering often time we'll assume a nominal voltage of 1 so that the 
 
 and the power _flow_ $\boldsymbol{f}$ along each line equals,
 
-<center>$\boldsymbol{f} = F\boldsymbol{\theta}$
+<center>$\boldsymbol{f} = F\boldsymbol{\theta}$</center>
 
 These are just linear equations, like we've seen in the previous homeworks. Moreover, phase angles are very difficult to measure, and we often work with many noisy samples of power injections and flows. For convenience, we can stack the two linear equation in a single equation:
 
-<center>$\boldsymbol{z} = H\boldsymbol{x}$
+<center>$\boldsymbol{z} = H\boldsymbol{x}$</center>
 
 In the following exercises we'll look at estimating the phase-angle state of the grid.
 
