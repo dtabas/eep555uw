@@ -11,7 +11,7 @@ paperurl: 'https://github.com/cpatdowling/ee559'
 In class we learned that the DC approximation of the power flow problem _linearizes_ the relationship between the phase angle and power injections over a power grid, like the example in Fig. 1. In this notebook we'll use linear regression with L1 (LASSO) and L2 (ridge) regularization to estimate the phase angle, line characteristics, power injections, flows, under various conditions.
 
 <center>Fig. 1: IEEE-123 Test Feeder</center>
-![alt](figs/123testfeeder.png)
+![alt](/images/notebooks_data/123testfeeder.png)
 
 First we'll need to go over a few definitions and matrices that you saw in class. Fig. 1 illustrates the IEEE-123 test feeder, a standardized distribution network used to test control algorithms and optimization techniques for application in real systems. Each _node_ in the graph is an electrical bus, and each _edge_ is a power line. In the programming assignment questions, we'll be looking at a much simpler, 8-bus network we design ourselves. Note that each bus has a number assigned to it.
 
@@ -44,7 +44,7 @@ These are just linear equations, like we've seen in the previous homeworks. More
 In the following exercises we'll look at estimating the phase-angle state of the grid.
 
 <center>Fig. 2: 8 bus network</center>
-![alt](figs/8-bus.png)
+![alt](/images/notebooks_data/8-bus.png)
 
 The linear system $z = Hx$ is overdetermined. In order to find a unique solution that satisfies various operational constraints, there are tricks and techniques that power engineers use, like incorporating a so-called slack bus, or using the Kron reduction, to determine values that the engineer cares about. We'll use what we've learned thus far: we can write this overdetermined system as,
 
@@ -52,7 +52,7 @@ The linear system $z = Hx$ is overdetermined. In order to find a unique solution
 
 where r is some residual error between a phase angle vector $x$ and the power flows and injections $z$. If we wrap the left hand side up in a 2-norm,
 
-<center>$||Hx - z||_{2}^{2} = r$</center>
+<center>$\|\|Hx - z\|\|_{2}^{2} = r$</center>
 
 minimizing the residual $r$ is just like the least squares problem. In the following problems we'll solve for the power injections and line flows using least squares, and examine the effect bad data has on our solution, and how we can adapt to it.
 
