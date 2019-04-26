@@ -1,7 +1,7 @@
 ---
 title: "L1, L2 Loss Functions and Regression"
 collection: publications
-permalink: /notebooks/regression
+permalink: /notebooks/regression_2
 excerpt: 'This notebook explores how choosing different loss functions influences the results of linear regression, and how to incorporate bias. EE PMP 559 Data Science for Power Systems, Spring 2019'
 date: 2019-04-08
 paperurl: 'https://github.com/cpatdowling/ee559'
