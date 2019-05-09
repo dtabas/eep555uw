@@ -1,7 +1,7 @@
 ---
 title: "L1, L2 Loss Functions and Regression"
 collection: publications
-permalink: /notebooks/regression
+permalink: /notebooks/regression_2
 excerpt: 'This notebook explores how choosing different loss functions influences the results of linear regression, and how to incorporate bias. EE PMP 559 Data Science for Power Systems, Spring 2019'
 date: 2019-04-08
 paperurl: 'https://github.com/cpatdowling/ee559'
@@ -218,7 +218,7 @@ plt.show()
 
 The [Huber loss](https://en.wikipedia.org/wiki/Huber_loss) is another way to deal with the outlier problem and is very closely linked to the LASSO regression loss function. The Huber loss with unit weight is defined as,
 
-<center>$\mathcal{L}_{huber}(y, \hat{y}) = \begin{cases} (y - \hat{y})^{2} & |y - \hat{y}| \leq 1 \\ |y - \hat{y}| & |y - \hat{y}| > 1 \end{cases}$</center>
+<center>$\mathcal{L}_{huber}(y, \hat{y}) = \begin{cases} 1/2(y - \hat{y})^{2} & |y - \hat{y}| \leq 1 \\ |y - \hat{y}| - 1/2 & |y - \hat{y}| > 1 \end{cases}$</center>
 
 In a _single_ figure with three [subplots](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html), plot the values of loss functions defined by the L2-norm, the L1-norm, and the Huber loss. That is, the x-axis should be the value of the error, $e = y - \hat{y}$, and the y-axis should be the value of the loss $\mathcal{L}(y, \hat{y})$. Label each subplot. Describe why is the Huber loss robust to outliers.
 

@@ -1,7 +1,7 @@
 ---
 title: "Linear Regression and DC Power Flow"
 collection: publications
-permalink: /notebooks/regression
+permalink: /notebooks/regression_3
 excerpt: 'This notebook explores the application of linear regression to state estimation in the DC power flow problem. EE PMP 559, Spring 2019'
 date: 2019-04-18
 paperurl: 'https://github.com/cpatdowling/ee559'

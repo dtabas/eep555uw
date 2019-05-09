@@ -1,9 +1,9 @@
 ---
 title: "Regression and Time Series Prediction: Training and Testing"
 collection: publications
-permalink: /notebooks/regression
+permalink: /notebooks/regression_4
 excerpt: 'This notebook explores the application of regression to time series prediction. EE PMP 559, Spring 2019'
-date: 2019-04-18
+date: 2019-04-25
 paperurl: 'https://github.com/cpatdowling/ee559'
 ---
 ### Regression and Time Series Prediction: Training and Testing
