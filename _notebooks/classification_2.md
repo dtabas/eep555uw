@@ -19,7 +19,7 @@ The weights $\omega$ that minimize the loss function gives us the model that lab
 Logistic Regression isn't as robust to outliers, but its loss function is differentiable and important in many applications like neural networks. SVM is robust to outliers and easy to apply non-linear kernels to (when the data isn't separable by a straight line), but like linear regression with L1 regularization (LASSO), requires a slower algorithm to determine a loss-minimizing solution. We can draw on our intuition from regression the effect of the choice of norm has on the loss function to see how SVM is robust to outliers while logistic regression is not.
 
 <center>Fig. 1</center>
-<center>![svm vs log loss](images/notebooks_data/svm_vs_log_loss.png)</center>
+![svm vs log loss](images/notebooks_data/svm_vs_log_loss.png)
 
 As in the previous homework, we'll use sklearn. Read the manpage for [SVM](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) before starting the assignment. Most machine learning toolkits treat algorithms for the same type of task (in this case, classification) the same. You'll find that training and testing an SVM is _identical_ to training and testing the logistic regression classifier we generated in the previous homework. You are encouraged to reuse and, if helpful, simplify your code or the code found in the homework 5 solutions.
 
