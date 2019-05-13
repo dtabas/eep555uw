@@ -13,11 +13,13 @@ Classification is an important task in data science: given some data Two common 
 Fig. 1 illustrates the primary intuition behind a classifier. Each point represents data from some measurements. The blue class and the orange class each represent something about that data: for example, the measurements were from people testing positive or negative for a virus. A classifier finds a line that seperates the data according to the training data we use, which is very nicely seperated in this example (it almost never is in reality). SVM and Logistic regression come up with slightly different decisions boundaries, illustrated in the figure. We'll talk about the differences in the next assignment.
 
 Fig. 1: SVM (dashed) and Logistic Regression (solid) decision boundaries
+
 ![alt](/images/notebooks_data/class_ex.png)
 
 The logistic loss function is derived from the [logistic function](https://en.wikipedia.org/wiki/Logistic_function). What's important to notice is that the output switches between 0 and 1---gradually---based on the input value. This is a critical ingredient for neural networks which we'll get to make use of in future assignments and partly why it's called a _neural_ network. Biological neurons switch from outputing [no signal to outputting a full signal](https://en.wikipedia.org/wiki/All-or-none_law) once they've recieved a sufficient signal from input neurons, with some noisy-ness due in part to the chemical process that governs the input and output interactions. The probability that a neuron will fire looks a lot like a logistic function.
 
 Fig. 2: Outputing 0 or 1
+
 ![alt](/images/notebooks_data/logistic_func.png)
 
 
