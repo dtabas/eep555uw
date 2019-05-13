@@ -67,7 +67,7 @@ plt.show()
 ```
 
 
-![png](images/notebooks_data/classification_1.png)
+![png](/images/notebooks_data/classification_1.png)
 
 
 ### Problem 1
