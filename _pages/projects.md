@@ -1,6 +1,6 @@
 ---
 permalink: /projects/
-title: "Current and past projects"
+title: ""
 excerpt: "This page contains descriptions of current and past projects"
 author_profile: true
 ---
