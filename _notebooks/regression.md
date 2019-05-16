@@ -4,7 +4,7 @@ collection: publications
 permalink: /notebooks/regression
 excerpt: 'This notebook is an self-assesment exercise in using Jupyter and NumPy tools to do basic linear regression for EE PMP 559 Data Science for Power Systems, Spring 2019.'
 date: 2019-03-19
-paperurl: 'https://github.com/cpatdowling/ee559/homework_1.ipynb'
+paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_1.ipynb'
 ---
 ## Linear Regression and Gradient Descent
 

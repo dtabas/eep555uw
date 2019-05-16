@@ -4,7 +4,7 @@ collection: publications
 permalink: /notebooks/regression_4
 excerpt: 'This notebook explores the application of regression to time series prediction. EE PMP 559, Spring 2019'
 date: 2019-04-25
-paperurl: 'https://github.com/cpatdowling/ee559/homework_4.ipynb'
+paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_4.ipynb'
 ---
 ### Regression and Time Series Prediction: Training and Testing
 

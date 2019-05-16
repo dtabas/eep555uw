@@ -4,7 +4,7 @@ collection: publications
 permalink: /notebooks/classification_2
 excerpt: 'This notebook explores the implementation of basic classification algorithms. EE PMP 559, Spring 2019'
 date: 2019-05-02
-paperurl: 'https://github.com/cpatdowling/ee559/homework_6.ipynb'
+paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_6.ipynb'
 ---
 ### Practical Classification: Support Vector Machines
 

@@ -4,7 +4,7 @@ collection: publications
 permalink: /notebooks/classification_3
 excerpt: 'This notebook explores the usages of kernel functions in SVM classification. EE PMP 559, Spring 2019'
 date: 2019-05-15
-paperurl: 'https://github.com/cpatdowling/ee559/homework_7.ipynb'
+paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_7.ipynb'
 ---
 ### Classification: SVM Kernels
 

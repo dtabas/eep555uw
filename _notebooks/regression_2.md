@@ -4,7 +4,7 @@ collection: publications
 permalink: /notebooks/regression_2
 excerpt: 'This notebook explores how choosing different loss functions influences the results of linear regression, and how to incorporate bias. EE PMP 559 Data Science for Power Systems, Spring 2019'
 date: 2019-04-08
-paperurl: 'https://github.com/cpatdowling/ee559/homework_2.ipynb'
+paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_2.ipynb'
 ---
 ### L1, L2 Loss Functions, Bias and Regression
 author: Chase Dowling (TA)
