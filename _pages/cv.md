@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Single page PDF](https://cpatdowling.github.io/files/Dowling_resume2019_formatted.pdf)
+
 Education
 ======
 * B.S. in Mathematics, University of Maryland, College Park, 2012
@@ -22,11 +24,12 @@ Employment
 * Graduate Research/Teaching Assistant (2015---2019)
   * University of Washington
   * Supervisor: Baosen Zhang
+  * [EE 559 "Data Science for Power Systems" course notebooks](https://github.com/cpatdowling/ee559)
 
 Service and leadership
 ======
 * Cofounder of the Maryland Men's Crew Alumni Association, 501(c)(3) non-profit established in 2014 to financially support the University of Maryland's men's crew program.
-* Communications Fellow, Pacific Science Center's Science Communications program
+* Communications Fellow, Pacific Science Center's Science [Communications program](https://www.pacificsciencecenter.org/fellowship/)
 
 Publications
 ======

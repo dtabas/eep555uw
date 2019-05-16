@@ -4,7 +4,7 @@ collection: publications
 permalink: /notebooks/classification_1
 excerpt: 'This notebook explores the implementation of basic classification algorithms. EE PMP 559, Spring 2019'
 date: 2019-04-30
-paperurl: 'https://github.com/cpatdowling/ee559'
+paperurl: 'https://github.com/cpatdowling/ee559/homework_5.ipynb'
 ---
 ### Practical Classification: Logistic Regression
 
