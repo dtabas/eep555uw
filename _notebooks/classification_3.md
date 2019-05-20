@@ -11,7 +11,7 @@ paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_7.ipynb'
 Suppose again we're given two classes and training data for each of the classes. As we've seen in the previous assignments, SVM and logistic regression find a _line_ that seperates them, so that when we see new samples we can classify them based on the line. Not all data is linearly seperable, however. Consider again the torus example in Fig. 1 from the previous homework's bonus problem: we can't seperate it with a straight line. 
 
 <center>Fig. 1</center>
-![alt](/images/noteooks_data/circle_class.png)
+![alt](/images/notebooks_data/circle_class.png)
 
 We can use something called a kernel function to push the data up to a higher dimension where _it is_ linearly seperable. In this homework we'll try putting a couple of kernel functions into practice, and see how parameter tuning effects our model. In machine learning, this is sometimes called the [kernel trick](https://en.wikipedia.org/wiki/Kernel_method). A kernel function can be thought of as a shortcut to a higher dimensional space given some data since it _only depends on the samples themselves_. We don't need to know anything explicit about higher order relationships, like when we specify a basis in the case of regression. A kernel function lets us implicitly see what the data would look like under a polynomial or Fourier basis.
 
