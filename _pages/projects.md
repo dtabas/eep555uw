@@ -9,7 +9,7 @@ author_profile: true
 
 ### Coincident peak timing in electrical markets
 
-Coincident peaks are a pricing mechanism in electrical markets based on the timing of the peak load across the _entire_ system, not just individual consumers. We show that the timing of these peaks can be [predicted](https://ieeexplore.ieee.org/abstract/document/8646654) with a purposefully simple neural network, implying that complex market behaviors involving hedging may emerge for large consumers with demand flexibility. For small consumers, we derive an optimal strategy using dynamic programming. For large consumers, their strategies more dramatically interact and we are investigating the existence of Nash equillibria.
+Coincident peaks are a pricing mechanism in electrical markets based on the timing of the peak load across the _entire_ system, not just individual consumers. We show that the timing of these peaks can be [predicted](https://ieeexplore.ieee.org/abstract/document/8646654) with a purposefully simple neural network, implying that complex market behaviors involving hedging may emerge for large consumers with demand flexibility. For small consumers, we derive an optimal strategy using [dynamic programming](https://arxiv.org/abs/1908.00685). For large consumers, their strategies more dramatically interact and we are investigating the existence of Nash equillibria.
 
 <p align="center">
   <img width="837" height="466" src="/images/CP_diagram.png" alt="Coincident peak data model">
