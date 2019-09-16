@@ -26,7 +26,7 @@ Learning for efficient state estimation and control of energy usage commercial H
 
 ### Measuring congestion due to drivers cruising for parking
 
-We estimate the proportion of drivers cruising for parking from open-source paid-parking transaction data using [queueing network](https://ieeexplore.ieee.org/abstract/document/8663628) techniques borrowed from communications theory. Combined with Google maps travel time estimates, costs to social welfare can also be estimated. With these results, [optimization](https://ieeexplore.ieee.org/abstract/document/8264412) of curbside parking resources with respect to congestion constraints can be targeted to [high demand regions](https://ieeexplore.ieee.org/abstract/document/8431681) where congestion resulting from cruising originates.
+We estimate the proportion of drivers cruising for parking from open-source paid-parking [transaction data](https://cpatdowling.github.io/notebooks/demandviz) using [queueing network](https://ieeexplore.ieee.org/abstract/document/8663628) techniques borrowed from communications theory. Combined with Google maps travel time estimates, costs to social welfare can also be estimated. With these results, [optimization](https://ieeexplore.ieee.org/abstract/document/8264412) of curbside parking resources with respect to congestion constraints can be targeted to [high demand regions](https://ieeexplore.ieee.org/abstract/document/8431681) where congestion resulting from cruising originates.
 
 <p align="center">
   <img width="806" height="382" src="/images/blockface.png" alt="curbside parking model">
