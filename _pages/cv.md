@@ -31,7 +31,7 @@ Service and leadership
 * Cofounder of the Maryland Men's Crew Alumni Association, 501(c)(3) non-profit established in 2014 to financially support the University of Maryland's men's crew program.
 * Communications Fellow, Pacific Science Center's Science [Communications program](https://www.pacificsciencecenter.org/fellowship/)
 * Graduate Fellow, University of Washington [Clean Energy Institute](https://www.cei.washington.edu/persons/chase-dowling/)
-* Torrance Howard [Tech Due Diligence Fellowship](https://www.cei.washington.edu/training/torrance-tech-due-diligence-program/)
+* Torrance Howard [Tech Due Diligence Analyst](https://www.cei.washington.edu/training/torrance-tech-due-diligence-program/)
 
 Publications
 ======
