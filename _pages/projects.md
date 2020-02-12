@@ -15,14 +15,15 @@ Coincident peaks are a pricing mechanism in electrical markets based on the timi
   <img width="837" height="466" src="/images/CP_diagram.png" alt="Coincident peak data model">
 </p>
 
----
-### Transfer learning for linear state estimators of commercial HVAC systems
-
-Learning for efficient state estimation and control of energy usage commercial HVAC systems is stymied by a lack of labeled data. The state of HVAC systems in commerical buildings can be reasonably approximated by a polynomial time dynamic equation; for a building with abundant sensor data we learn an accurate model as a base for transfering to buildings in which sensor deployment is limited. 
-
 ======
 
 ## Past Projects
+
+### Transfer learning for linear state estimators of commercial HVAC systems
+
+Learning for efficient state estimation and control of energy usage commercial HVAC systems is stymied by a lack of labeled data. The state of HVAC systems in commerical buildings can be reasonably approximated by a polynomial time dynamic equation; for a building with abundant sensor data we learn an accurate model as a base for transfering to buildings in which sensor deployment is limited. Between similar buildings, we demonstrate a method of transfering such a model when used for [fault detection](https://arxiv.org/abs/2002.01060).
+
+---
 
 ### Measuring congestion due to drivers cruising for parking
 
