@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a data scientist at Pacific Northwest National Laboratory's Seattle office. I received my Ph.D. in electrical and computer engineering from the University of Washington under the advisement of [Baosen Zhang](https://zhangbaosen.github.io/). Prior to graduate school I was a junior scientist at PNNL deploying machine learning algorithms in HPC environments after completing my B.S. (2012) in mathematics at the University of Maryland, College Park. 
+I'm an applied scientist at Pacific Northwest National Laboratory's Seattle office. I received my Ph.D. in electrical and computer engineering from the University of Washington under the advisement of [Baosen Zhang](https://zhangbaosen.github.io/). Prior to graduate school I was a junior scientist at PNNL deploying machine learning algorithms in HPC environments after completing my B.S. (2012) in mathematics at the University of Maryland, College Park. 
 
 My current and past research projects have focused on identifying and executing applications of statistical and machine learning that respect the design constraints and security requirements of large engineered systems like roadways and power grids. In general I'm interested in control and reliability guarantees when designing engineered systems such that domain experts can more freely apply machine learning techniques.
 
