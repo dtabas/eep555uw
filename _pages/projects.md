@@ -7,6 +7,16 @@ author_profile: true
 
 ## Current Projects
 
+### Dynamic Curb Resource Allocation
+
+Curb space can be viewed as the interfacing layer between a city's surface transportation network and the point of arrival or departure for goods and people. As the variety of mobility services increases, cities are pressed for effective policies. With funding from the Department of Energy's Vehicle Technology Office, PNNL is leading the development of curb resource management and data analysis tools to simulate prospective policies and measure its impact, for example, by computing a curb policy dependent fundamental diagram on adjacent roadways. We've partnered with the University of Washington [Urban Freight Lab](http://depts.washington.edu/sctlctr/urban-freight-lab-0) to simulate curb activity on a block-by-block scale, Lawrence Berkeley National Laboratory's developers of the [BEAM](https://beam.lbl.gov/) (a city-scale traffic simulator) to measure region-wide energy efficiency and producty impacts, the National Renewable Energy Laboratory to draw on energy efficiency performance metric expertise, and smart cities tech company [Lacuna](https://lacuna.ai/) to develop state of the art management strategies based on new data streams and standards.
+
+<p align="center">
+  <img width="800" height="252" src="/images/Dynamic_Curbs_v4-01.png" alt="Curb demand profiles by modality">
+</p>
+
+======
+
 ### Coincident peak timing in electrical markets
 
 Coincident peaks are a pricing mechanism in electrical markets based on the timing of the peak load across the _entire_ system, not just individual consumers. We show that the timing of these peaks can be [predicted](https://ieeexplore.ieee.org/abstract/document/8646654) with a purposefully simple neural network, implying that complex market behaviors involving hedging may emerge for large consumers with demand flexibility. For small consumers, we derive an optimal strategy using [dynamic programming](https://arxiv.org/abs/1908.00685). For large consumers, their strategies more dramatically interact and we are investigating the existence of Nash equillibria.
