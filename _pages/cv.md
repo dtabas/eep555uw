@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[Single page PDF](https://cpatdowling.github.io/files/Dowling_resume2019_formatted.pdf)
+[Single page PDF](https://cpatdowling.github.io/files/resume_single.pdf)
 
 Education
 ======
@@ -18,8 +18,9 @@ Education
 
 Employment
 ======
-* Data Scientist (2012---present, on educational leave) 
+* Applied Scientist (2012---present) 
   * Pacific Northwest National Laboratory
+  * Physical and Computational Sciences Directorate
 
 * Graduate Research/Teaching Assistant (2015---2019)
   * University of Washington
