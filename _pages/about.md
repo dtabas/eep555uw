@@ -2,7 +2,7 @@
 permalink: /
 title: "EE P 555 (Spring 2022): Data Science for Power Systems"
 excerpt: "This page contains links and descriptions for EE 555 homework assignments"
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
