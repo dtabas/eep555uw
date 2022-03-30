@@ -9,11 +9,11 @@
 locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
-name                     : &name "Chase Patrick Dowling"
-description              : &description "Applied Scientist, Pacific Northwest National Laboratory"
-url                      : https://cpatdowling.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "EE P 555 Data Science for Power Systems"
+description              : &description "University of Washington"
+url                      : https://eep555uw.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "cpatdowling.github.io"
+repository               : "eep555uw.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chase Patrick Dowling"
+  name             : "Daniel Tabas"
   avatar           : "web.jpg"
-  bio              : "Applied Scientist"
+  bio              : "Graduate Student Researcher"
   location         : "Seattle, Washington"
-  employer         : "PNNL"
+  employer         : "University of Washington"
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=0NnjG2IAAAAJ&hl=en"
-  email            : "cpatdowling@gmail.com"
+  googlescholar    : #"https://scholar.google.com/citations?user=0NnjG2IAAAAJ&hl=en"
+  email            : #"cpatdowling@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "cpatdowling"
+  github           : #"cpatdowling"
   google_plus      :
   keybase          :
-  instagram        : "cpatdowling/"
+  instagram        : #"cpatdowling/"
   lastfm           :
-  linkedin         : "chase-patrick-dowling-bb781287/"
-  orcid            : "https://orcid.org/0000-0001-6878-0750"
+  linkedin         : #"chase-patrick-dowling-bb781287/"
+  orcid            : #"https://orcid.org/0000-0001-6878-0750"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -114,7 +114,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  triumph_experience  : "https://www.triumphexp.com/member/cpatdowling.64855/"
+  triumph_experience  : #"https://www.triumphexp.com/member/cpatdowling.64855/"
 
 
 # Reading Files
