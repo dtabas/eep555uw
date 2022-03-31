@@ -1,13 +1,3 @@
----
-permalink: /
-title: "EE P 555 (Spring 2022): Data Science for Power Systems"
-excerpt: "This page contains links and descriptions for EE 555 homework assignments"
-author_profile: false
-redirect_from: 
-  - /about/
-  - /about.html
----
-
 
 This page contains links to all homework assignments and solutions as they are posted for [EE PMP 559: Data Science for Power Systems](https://zhangbaosen.github.io/teaching/EE559_2019). Homework assignments can be downloaded individually from [https://github.com/cpatdowling/ee559](https://github.com/cpatdowling/ee559) or they can pulled via a Git client. Git is a version control tool for software engineering, but is great for making your code available to a broader audience. If you've downloaded Git, to clone (initialize a repository and download) a repository from command line, say from your school directory for example:
 
