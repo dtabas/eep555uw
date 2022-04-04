@@ -2,19 +2,19 @@
 title: "Linear Regression and Gradient Descent"
 collection: publications
 permalink: /notebooks/regression
-excerpt: 'This notebook is an self-assesment exercise in using Jupyter and NumPy tools to do basic linear regression for EE PMP 559 Data Science for Power Systems, Spring 2019.'
-date: 2019-03-19
-paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_1.ipynb'
+excerpt: 'This notebook is an self-assesment excerise in using Jupyter and NumPy tools to do basic linear regression for EE PMP 555, Spring 2022'
+date: 2022-04-03
+paperurl: 'https://dtabas.github.io/eep555uw/'
 ---
 ## Linear Regression and Gradient Descent
 
-author: Chase Dowling (TA)
-contact: cdowling@uw.edu
-course: EE PMP 559, Spring '19
+author: Chase Dowling
+contact: Daniel Tabas (TA) dtabas@uw.edu
+course: EE PMP 555, Spring '22
 
 In this notebook we'll review how to perform linear regression as an introduction to using Python's numerical library NumPy. NumPy is very similar to MATLAB but is open source, and has broader utilitzation in data science than R as many useful tools we can utilize are compatible with NumPy. To demonstrate, we'll solve regression problems using a technique called gradient descent with code we write in NumPy. Becoming comfortable with NumPy opens up a wide range of data analysis techniques and visualization tools.
 
-Provided you've installed Jupyter via [Anaconda](https://www.anaconda.com/) the required libraries will be available. Jupyter is a useful development environment for sharing your work in notebooks like the one you're reading. The namespace of an active notebook is persistent across cells and cell executions, so keep track of your variable names! This notebook can be found at [github.com/cpatdowling/ee559/regression.ipynb](https://github.com/cpatdowling/ee559). The markdown notebook on this page is for display only. You can download the ipynb file from the repository directly or clone the entire repository by using [Git](https://github.com/) (recommended).
+Provided you've installed Jupyter via [Anaconda](https://www.anaconda.com/) the required libraries will be available. Jupyter is a useful development environment for sharing your work in notebooks like the one you're reading. The namespace of an active notebook is persistent across cells and cell executions, so keep track of your variable names! This notebook can be found at [github.com/dtabas/ee555/hw1/regression.ipynb](https://github.com/dtabas/ee555/hw1/regression.ipynb). The markdown notebook on this page is for display only. You can download the ipynb file from the repository directly or clone the entire repository by using [Git](https://github.com/) (recommended).
 
 ### <center> Linear regression </center>
 

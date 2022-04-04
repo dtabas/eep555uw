@@ -13,11 +13,11 @@ This page contains links to all programming assignments and solutions as they ar
 
 Homework assignments can be downloaded individually from [https://github.com/dtabas/ee555](https://github.com/dtabas/ee555) or they can pulled via a Git client. Git is a version control tool for software engineering, but is great for making your code available to a broader audience. If you've downloaded Git, to clone (initialize a repository and download) a repository from command line, say from your school directory for example:
 
-`chase@mycomputer:~/school$ git clone https://github.com/cpatdowling/ee559.git`
+`name@mycomputer:~/school$ git clone https://github.com/dtabas/ee555.git`
 
 When new assignments and solutions are released, all you need to do to update your repository is to use the 'pull' command inside the repository directory:
 
-`chase@mycomputer:~/school/ee559$ git pull`
+`name@mycomputer:~/school/ee555$ git pull`
 
 If you'd prefer to use a GUI, there is a [desktop GitHub client](https://desktop.github.com/) that makes cloning, pushing, and pulling repositories very straightforward.
 
