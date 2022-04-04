@@ -287,7 +287,7 @@ plt.show()
 ```
 
 
-![png](/images/notebooks_data/regression_3.png)
+![png](../images/notebooks_data/regression_3.png)
 
 
 
@@ -303,7 +303,7 @@ plt.show()
 ```
 
 
-![png](/images/notebooks_data/regression_4.png)
+![png](../images/notebooks_data/regression_4.png)
 
 
 Notice that we can still find a line of best fit that minimizes the loss function. The underlying function is polynomial, however, and not linear, so we might need to use a different basis function. The term linear in linear regression implies that the basis function of the system is linear. We could also try polynomial regression. This is why gradient descent is useful; not all basis functions give us a closed form solution like in the case of linear regression, but we can always minimize the squared loss given a differentiable basis function. The challenge is then choosing the correct basis function. We'll be diving much deeper into this as the course progresses.
@@ -331,7 +331,7 @@ plt.scatter(X_poly,Y_poly)
 plt.show()
 ```
 
-![png](/images/notebooks_data/regression_5.png)
+![png](../images/notebooks_data/regression_5.png)
 
 
 ### Assignment questions
@@ -368,7 +368,7 @@ plt.show()
 ```
 
 
-![png](/images/notebooks_data/regression_6.png)
+![png](../images/notebooks_data/regression_6.png)
 
 
 
