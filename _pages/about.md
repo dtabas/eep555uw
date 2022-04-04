@@ -34,4 +34,4 @@ Submission: self assessment; no submission required.
 
 Instructions: Download the assignment notebook; homework questions can be found at the bottom of the notebook where you can insert your own code. The executable code should include comments with your discussion and/or generate plots where prompted. The class repo also contains some data required for the assignment in a txt file.
 
-[view web version](https://dtabas.github.io/eep555uw/notebooks/regression),  [source](https://dtabas.github.io/ee555/hw1)
+[view web version](https://dtabas.github.io/eep555uw/notebooks/regression),  [source](https://github.com/dtabas/ee555/tree/main/hw1)
