@@ -27,11 +27,7 @@ This may look familiar; this is essentially the equation of the magnitude of a v
 
 <center> $\|v\|_{2} := \sqrt{\sum_{i = 1}^{n} v_i^{2}}$, </center>
 
-where each $v_i$ is a dimension of the vector $v$. If the error $e = y - \hat{y}$, then the loss function 
-
-<center> $ \mathcal{L} = \|e\|^2_2$ <\center>
-
-is the square of the L2 norm of the vector of errors. It's helpful to represent data as matrices, and errors as vectors, as there are many norms we can choose from to be loss functions. Using, and as we will see, _combining_ different norms have different effects on the outcomes of the regression problem. We'll look at a few in this notebook.
+where each $v_i$ is a dimension of the vector $v$. If the error $e = y - \hat{y}$, then the loss function is the square of the L2 norm of the vector of errors. It's helpful to represent data as matrices, and errors as vectors, as there are many norms we can choose from to be loss functions. Using, and as we will see, _combining_ different norms have different effects on the outcomes of the regression problem. We'll look at a few in this notebook.
 
 ### Bias
 
