@@ -25,6 +25,15 @@ Submit your coding assignments along with the written portions to Canvas.
 
 
 
+Assignment 2: Regularization and Linear Estimation in Power Systems
+===
+
+Due: April 16th at 11:59pm
+
+Submission: Canvas
+
+Instructions: Homework questions can again be found at the bottom of the notebook where you will insert your own code. Please include your discussion in comments and/or generate plots where prompted. The class repo also contains some data required for the assignment. View [web verstion](https://dtabas.github.io/eep555uw/notebooks/assignment_2), [source](https://github.com/dtabas/ee555/tree/main/hw2)
+
 Assignment 1: Linear Regression and Gradient Descent
 ======
 
