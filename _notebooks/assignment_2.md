@@ -91,7 +91,8 @@ print(list(w))
 
 plt.plot(x,y,'o',label='data')
 plt.legend()
-plt.show()```
+plt.show()
+```
 
 Weights for second-order model:
 0.029772256681336512,
@@ -136,7 +137,8 @@ plt.plot(x,y1,label=r'$||w||_1$')
 plt.plot(x,y2,label=r'$||w||_2^2$')
 plt.legend()
 plt.xlabel('w')
-plt.ylabel('Regularization penalty');```
+plt.ylabel('Regularization penalty');
+```
 
 ![png](../images/notebooks_data/lasso_ridge.png)
 
@@ -146,7 +148,7 @@ The L2 penalty is larger away from 0, but the L1 penalty is larger near 0. There
 
 In class we learned that the DC approximation of the power flow problem _linearizes_ the relationship between the phase angle and power injections over a power grid. In this notebook we'll use linear regression to estimate the phase angle, line characteristics, power injections, flows, under various conditions.
 
-<center> Figure 2 <center>
+<center> Figure 2 </center>
 
 ![png](../images/notebooks_data/4_bus.png)
 
@@ -172,11 +174,11 @@ In power engineering often time we'll assume a nominal voltage of 1 so that the 
 
 and the power _flow_ $\boldsymbol{f}$ along each line equals,
 
-<center>$\boldsymbol{f} = F\boldsymbol{\theta}$
+<center>$\boldsymbol{f} = F\boldsymbol{\theta}$ </center>
 
 These are just linear equations, like we've seen in the previous homeworks. Moreover, phase angles are very difficult to measure, and we often work with many noisy samples of power injections and flows. For convenience, we can stack the two linear equation in a single equation:
 
-<center>$\boldsymbol{z} = H\boldsymbol{x}$
+<center>$\boldsymbol{z} = H\boldsymbol{x}$ </center>
     
 where $x = \theta$.
 
@@ -256,7 +258,8 @@ loss = np.linalg.norm(H.dot(x_hat) - z, 2)
 
 print("Error")
 print(loss)
-print("\n")```
+print("\n")
+```
 
 
 ## Homework questions
@@ -314,7 +317,8 @@ plt.legend()
 plt.show()
 
 print("coefficients: ")
-print(w)```
+print(w)
+```
 
 ![png](../images/notebooks_data/lasso.png)
 
@@ -364,7 +368,8 @@ plt.scatter(l1_ball[:,0], l1_ball[:,1], label="l1 ball")
 plt.scatter(l2_ball[:,0], l2_ball[:,1], label="l2 ball")
 plt.legend(loc=2)
 plt.axis('equal') #this makes the axes the same scale so that the circle isn't elliptical looking
-plt.show()```
+plt.show()
+```
 
 ![png](../images/notebooks_data/norm_balls.png)
 
@@ -378,7 +383,8 @@ For this problem you'll need to read the [scikit-learn documentation](https://sc
 samples_1 = []
 
 for i in range(100):
-    samples_1.append(z + np.random.normal(0,0.02,size=z.shape)) #the true value + some noise```
+    samples_1.append(z + np.random.normal(0,0.02,size=z.shape)) #the true value + some noise
+```
     
 ### Problem 4: Weighted estimation
 
@@ -400,7 +406,8 @@ for i in range(100):
     line_noise = np.random.normal(0,0.03,size=z[0:4].shape)       #variance equal to 0.03
     samples_2.append(z + np.expand_dims(np.append(line_noise,injection_noise),axis=1)) #the true value + some noise
     
-samples_2 = np.asarray(samples_2)[:,:,0].T```
+samples_2 = np.asarray(samples_2)[:,:,0].T
+```
 
 Now, find a vector of sample weights that improves on the loss over the vector of weights all equal to 1.
 
@@ -410,4 +417,5 @@ We are again given a sequence of observations of power flows and injection, but 
 
 ```python
 #100 x 8 array of z samples
-samples_3_array = np.loadtxt("homework_2_data.txt")```
+samples_3_array = np.loadtxt("homework_2_data.txt")
+```
