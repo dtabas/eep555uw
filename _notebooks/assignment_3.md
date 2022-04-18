@@ -15,7 +15,7 @@ Fig. 1 illustrates the total power demand in the Texas electrical market (ERCOT)
 <center>Fig. 1</center>
 ![alt](../images/notebooks_data/ercot_demand.png)
 
-The first step in setting the generation schedule is predicting how much power will be consumed by the grid at future time steps. We're going to suppose that our job is to predict how much power the grid will consume in the _next_ hour for a given day. We'll suppose that for a typical day, each hour can be predicted as a function of the previous hour's power consumption and a number of other features, like temperature, humidity, time of day, etc. Let $\boldsymbol{x}<sub>t</sub> = \langle x<sub>i,t</sub> \rangle$ where each vector component $i$ is one of these data features at time $t$, and $\boldsymbol{p}_{t+1}$ is the power consumed at time $t + 1$. If this function is linear, then,
+The first step in setting the generation schedule is predicting how much power will be consumed by the grid at future time steps. We're going to suppose that our job is to predict how much power the grid will consume in the _next_ hour for a given day. We'll suppose that for a typical day, each hour can be predicted as a function of the previous hour's power consumption and a number of other features, like temperature, humidity, time of day, etc. Let $\textbf{x}<sub>t</sub> = \langle x<sub>i,t</sub> \rangle$ where each vector component $i$ is one of these data features at time $t$, and $\boldsymbol{p}<sub>t+1</sub>$ is the power consumed at time $t + 1$. If this function is linear, then,
 
 <center>$\boldsymbol{p}_{t+1} = w^{T}\boldsymbol{x}_{t}$</center>
 
