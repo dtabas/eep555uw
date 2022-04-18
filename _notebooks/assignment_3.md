@@ -19,10 +19,7 @@ The first step in setting the generation schedule is predicting how much power w
 
 <center>$\boldsymbol{x}_t = \langle x_{i,t} \rangle$ </center>
 
-    where each vector component $i$ is one of these data features at time $t$,
-    and $\boldsymbol{p}_{t+1}$
-    is the power consumed at time $t + 1$.
-    If this function is linear, then,
+where each vector component $i$ is one of these data features at time $t$, and $\boldsymbol{p}_{t+1}$ is the power consumed at time $t + 1$. If this function is linear, then,
 
 <center>$\boldsymbol{p}_{t+1} = w^{T}\boldsymbol{x}_{t}$</center>
 
