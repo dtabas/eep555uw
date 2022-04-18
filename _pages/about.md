@@ -23,7 +23,14 @@ If you'd prefer to use a GUI, there is a [desktop GitHub client](https://desktop
 
 Submit your coding assignments along with the written portions to Canvas.
 
+Assignment 3: Regression and Time Series Forecasting: Training and Testing
+====
 
+Due: April 23rd at 11:59pm
+
+Submission: [Canvas](https://canvas.uw.edu/courses/1545435/assignments/7339179)
+
+View [web version](https://dtabas.github.io/eep555uw/notebooks/assignment_3), [source](https://github.com/dtabas/ee555/tree/main/hw3)
 
 Assignment 2: Regularization and Linear Estimation in Power Systems
 ===

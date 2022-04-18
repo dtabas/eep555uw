@@ -1,10 +1,10 @@
 ---
 title: "Regression and Time Series Prediction: Training and Testing"
 collection: publications
-permalink: /notebooks/regression_4
-excerpt: 'This notebook explores the application of regression to time series prediction. EE PMP 559, Spring 2019'
-date: 2019-04-25
-paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_4.ipynb'
+permalink: /notebooks/assignment_3
+excerpt: 'This notebook explores the application of regression to time series prediction. EE PMP 555, Spring 2022'
+date: 2022-04-17
+paperurl: 'https://github.com/dtabas/ee555/tree/main/hw3'
 ---
 ### Regression and Time Series Prediction: Training and Testing
 
@@ -13,20 +13,20 @@ As we've noticed in power flow problems we've been looking at in class, grid ope
 Fig. 1 illustrates the total power demand in the Texas electrical market (ERCOT) in 2017. Recall Hurricane Harvey caused massive flooding in Houston in late August that year; the red line in Fig. 1 marks 24 hours prior to Hurricane Harvey hitting Houston and causing widespread outages in one of the largest cities in Texas.
 
 <center>Fig. 1</center>
-![alt](/images/notebooks_data/ercot_demand.png)
+![alt](../images/notebooks_data/ercot_demand.png)
 
-The first step in setting the generation schedule is predicting how much power will be consumed by the grid at future time steps. We're going to suppose that our job is to predict how much power the grid will consume in the _next_ hour for a given day. We'll suppose that for a typical day, each hour can be predicted as a function of the previous hour's power consumption and a number of other features, like temperature, humidity, time of day, etc. Let $\boldsymbol{x}\_{t} = \langle x\_{i,t} \rangle$ where each vector component $i$ is one of these data features at time $t$, and $\boldsymbol{p}\_{t+1}$ is the power consumed at time $t + 1$. If this function is linear, then,
+The first step in setting the generation schedule is predicting how much power will be consumed by the grid at future time steps. We're going to suppose that our job is to predict how much power the grid will consume in the _next_ hour for a given day. We'll suppose that for a typical day, each hour can be predicted as a function of the previous hour's power consumption and a number of other features, like temperature, humidity, time of day, etc. Let $\boldsymbol{x}_{t} = \langle x_{i,t} \rangle$ where each vector component $i$ is one of these data features at time $t$, and $\boldsymbol{p}_{t+1}$ is the power consumed at time $t + 1$. If this function is linear, then,
 
 <center>$\boldsymbol{p}_{t+1} = w^{T}\boldsymbol{x}_{t}$</center>
 
 where $w$ is the vector of weights we would solve for in the standard linear regression problem. From the slides, this is an autoregressive model of order 1, meaning the next time step only depends on the previous. Including previous historical values (i.e. $x_{t-1}, x_{t-2}\ldots$) increases the order:
 
-<center>$\boldsymbol{p}_{t+1} = w_{1}^{T}\boldsymbol{x}_{t} + w_{2}^{T}\boldsymbol{x}_{T - 1}\ldots$</center>
+<center>$\boldsymbol{p}_{t+1} = w_{1}^{T}\boldsymbol{x}_{t} + w_{2}^{T}\boldsymbol{x}_{t - 1}\ldots$</center>
 
 <center>Fig. 2</center>
-![alt](/images/notebooks_data/load_profile.png)
+![alt](../images/notebooks_data/load_profile.png)
 
-This load profile is representative of how much power might be consumed over the course of a day. This is a typical profile for many grids, with a small peak in the morning and a larger peak in the evening, with the least power demanded in the earliest hours of the morning. Unfortunately a linear model won't describe the behavior we see here, so we'll assume we need to use a polynomial basis in this and the following assignments. We'll need pass the input data through a polynomial basis function $\phi$, just like we have in the previous assignments:
+This load profile is representative of how much power might be consumed over the course of a day. This is a typical profile for many grids, with a small peak in the morning and a larger peak in the evening, with the least power demanded in the earliest hours of the morning. Unfortunately a linear model won't describe the behavior we see here, so we'll assume we need to use a polynomial basis in this and the following assignments. We need to pass the input data through a polynomial basis function $\phi$, just like we have in the previous assignments:
 
 <center>$\boldsymbol{p}_{t+1} = w_{1}^{T}\phi(\boldsymbol{x}_{t}) + w_{2}^{T}\phi(\boldsymbol{x}_{T - 1})\ldots$</center>
 
@@ -66,7 +66,7 @@ def poly_basis_multi_sample(X, k):
 
 ```python
 #import the training data
-data = np.loadtxt("homework_4_data_ex_train.txt")
+data = np.loadtxt("homework_3_data_ex_train.txt")
 
 #in this example there are 5 feature dimensions over 24 hours
 X_train_raw = data[:,0:4]
@@ -98,7 +98,7 @@ print(Y_train.shape)
 ```
 
 
-![png](/images/notebooks_data/regression_4_1.png)
+![png](../images/notebooks_data/regression_4_1.png)
 
 
     (22, 32)
@@ -109,7 +109,7 @@ print(Y_train.shape)
 ```python
 #similarly we'll load the test data
 #import the training data
-data_test = np.loadtxt("homework_4_data_ex_test.txt")
+data_test = np.loadtxt("homework_3_data_ex_test.txt")
 
 X_test_raw = data_test[:,0:4]
 
@@ -141,9 +141,7 @@ w = lasso_regressor.coef_
 
 
 ```python
-#here we plot our training data, model, and test data. Notice the model and training data are relatively close
-#but the true values are a little farther away. Both the train and test sets were generated with the same weights
-#we'll try to figure out what's going on in this and next assignment
+#here we plot our training data and model.
 
 plt.plot(X_train.dot(w), label="model values")   #our model
 plt.plot(Y_train, label="training values")   #our training data
@@ -152,7 +150,7 @@ plt.show()
 ```
 
 
-![png](/images/notebooks_data/regression_4_2.png)
+![png](../images/notebooks_data/regression_4_2.png)
 
 
 ### Problem 1
@@ -231,13 +229,4 @@ Y_test_raw_prob_3 = data_test[:,5][7:]
 
 ```python
 #insert code here
-```
-
-### Bonus Problem
-
-Use a Fourier basis (sines and cosines) either in conjunction with a polynomial basis, or on its own, to create a forecast model similar to polynomial basis with an auto-regressive model order 2. Hint: you can use the gradient descent method from homework 1, but you need to incoporate a weight inside of the Fourier terms in addition to the outside; that means you need to compute an extra partial derivative with respect to the loss for each additional weight term.
-
-
-```python
-#insert your code here
 ```
