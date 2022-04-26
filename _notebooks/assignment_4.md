@@ -103,17 +103,7 @@ Using the classifier trained in problem 1, compute the precision and recall of t
 
 ### Problem 3
 
-The the noise in our data is Gaussian; compare the empirical mean and variance of the training and test data sets (remember, each row of the train and test sets are a 2-dimensional sample, so the empirical mean and variance are 2 dimensional). In your own words, why might the test performance be lower?
-
-
-```python
-#insert your code here
-```
-
-### Bonus 1
-
-Create two scatter plots: one plot for the training data as above, and one for the test data. Use sklearn's model_object.decision_function() method to draw the decision boundaries of each model. A tutorial can be found [here](https://scikit-learn.org/stable/auto_examples/svm/plot_separating_hyperplane.html) for plotting an SVM's decision function, which we'll be getting into next week. The procedure for drawing the decision boundary is identical for the logistic regression model.
-
+You are given two time series, $X = \{x_t\}_{t=1}^T$ and $Y = \{y_t\}_{t=1}^T$ in the files "hw4_p3_X.txt" and "hw4_p3_Y.txt". Fit $y_t$ using a second-order linear ARX model with exogenous input $x_t$. Print the coefficients $c, \phi_1, \phi_2,$ and $w$. 
 
 ```python
 #insert your code here
