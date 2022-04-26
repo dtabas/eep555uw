@@ -23,6 +23,16 @@ If you'd prefer to use a GUI, there is a [desktop GitHub client](https://desktop
 
 Submit your coding assignments along with the written portions to Canvas.
 
+Assignment 4: ARX and Classification (Logistic Regression)"
+===
+
+Due: April 30 11:59pm
+
+Submission: [Canvas](https://canvas.uw.edu/courses/1545435/assignments/7350840)
+
+View [web version](https://dtabas.github.io/eep555uw/notebooks/assignment_4), [source](https://github.com/dtabas/ee555/tree/main/hw4)
+
+
 Assignment 3: Regression and Time Series Forecasting: Training and Testing
 ====
 

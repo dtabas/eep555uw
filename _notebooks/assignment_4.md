@@ -1,26 +1,37 @@
 ---
-title: "Practical Classification: Logistic Regression"
+title: "ARX and Classification (Logistic Regression)"
 collection: publications
-permalink: /notebooks/classification_1
-excerpt: 'This notebook explores the implementation of basic classification algorithms. EE PMP 559, Spring 2019'
-date: 2019-04-30
-paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_5.ipynb'
+permalink: /notebooks/assignment_4
+excerpt: 'This notebook explores the implementation of basic classification algorithms. EE PMP 555, Spring 2022'
+date: 2022-04-25
+paperurl: 'https://github.com/dtabas/ee555/blob/master/homework_4.ipynb'
 ---
+
+### ARX model
+
+The ARX (autoregressive with exogenous inputs) model is useful for modelling a time series $y_t$ that evolves based on both its recent states $y_{t-1},...,y_{t-p}$ and an exogenous variable $x_t$. Examples include power demand influenced by ambient temperature, and stock prices influenced by the price of crude oil. An order-$p$ linear ARX model would be given by 
+
+<center> $y_t = c + \phi_1 y_{t-1} + \cdots + \phi_p y_{t-p} + w x_t$ </center>
+
+where $c, \{\phi_k\}_{k=1}^p,$ and $w$ are constants.
+
+Fitting an ARX model is very similar to fitting an AR (autoregressive) model, except now we have more information at our disposal. Specifically, $x_t$ is treated as another feature along with $y_{t-1},...,y_{t-p}$ and the bias feature (constant 1, with coefficient $c$) when predicting $y_t$. 
+
 ### Practical Classification: Logistic Regression
 
-Classification is an important task in data science: given some data Two common classification algorithms are logistic regression and support vector machines (SVMs), but there are _many_ algorithms to [choose from](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html#sphx-glr-auto-examples-classification-plot-classifier-comparison-py). In this homework we'll focus on logistic regression and walk through some practical examples of binary classification: where data can either be one of two classes, which we label 0 or 1. Ultimately, classifiers like logistic regression and SVM, which we'll talk about in the next assignment, _try to find a line that seperates the input data on one of two sides_.
+Classification is an important task in data science: given some unlabeled observations/data, we want to group the observations based on common features. Two common classification algorithms are logistic regression and support vector machines (SVMs), but there are _many_ algorithms to [choose from](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html#sphx-glr-auto-examples-classification-plot-classifier-comparison-py). In this homework we'll focus on logistic regression and walk through some practical examples of binary classification: where data can either be one of two classes, which we label 0 or 1. Ultimately, classifiers like logistic regression and SVM, which we'll talk about in the next assignment, _try to find a line that seperates the input data on one of two sides_.
 
 Fig. 1 illustrates the primary intuition behind a classifier. Each point represents data from some measurements. The blue class and the orange class each represent something about that data: for example, the measurements were from people testing positive or negative for a virus. A classifier finds a line that seperates the data according to the training data we use, which is very nicely seperated in this example (it almost never is in reality). SVM and Logistic regression come up with slightly different decisions boundaries, illustrated in the figure. We'll talk about the differences in the next assignment.
 
 Fig. 1: SVM (dashed) and Logistic Regression (solid) decision boundaries
 
-![alt](/images/notebooks_data/class_ex.png)
+![alt](../images/notebooks_data/class_ex.png)
 
 The logistic loss function is derived from the [logistic function](https://en.wikipedia.org/wiki/Logistic_function). What's important to notice is that the output switches between 0 and 1---gradually---based on the input value. This is a critical ingredient for neural networks which we'll get to make use of in future assignments and partly why it's called a _neural_ network. Biological neurons switch from outputing [no signal to outputting a full signal](https://en.wikipedia.org/wiki/All-or-none_law) once they've recieved a sufficient signal from input neurons, with some noisy-ness due in part to the chemical process that governs the input and output interactions. The probability that a neuron will fire looks a lot like a logistic function.
 
 Fig. 2: Outputing 0 or 1
 
-![alt](/images/notebooks_data/logistic_func.png)
+![alt](../images/notebooks_data/logistic_func.png)
 
 
 ```python
@@ -67,7 +78,7 @@ plt.show()
 ```
 
 
-![png](/images/notebooks_data/classification_1.png)
+![png](../images/notebooks_data/classification_1.png)
 
 
 ### Problem 1
