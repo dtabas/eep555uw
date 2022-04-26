@@ -5,6 +5,7 @@ permalink: /notebooks/assignment_4
 excerpt: 'This notebook explores the implementation of basic classification algorithms. EE PMP 555, Spring 2022'
 date: 2022-04-25
 paperurl: 'https://github.com/dtabas/ee555/blob/master/homework_4.ipynb'
+use_math: true
 ---
 
 ### ARX model
