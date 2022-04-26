@@ -103,7 +103,7 @@ Using the classifier trained in problem 1, compute the precision and recall of t
 
 ### Problem 3
 
-You are given two time series, $X = \{x_t\}_{t=1}^T$ and $Y = \{y_t\}_{t=1}^T$ in the files "hw4_p3_X.txt" and "hw4_p3_Y.txt". Fit $y_t$ using a second-order linear ARX model with exogenous input $x_t$. Print the coefficients $c, \phi_1, \phi_2,$ and $w$. 
+You are given two time series, X and Y. Fit y(t) using a second-order linear ARX model with exogenous input x(t). Print the coefficients c, phi1, phi2, and w. 
 
 ```python
 #insert your code here
