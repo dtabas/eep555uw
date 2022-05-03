@@ -1,10 +1,10 @@
 ---
 title: "Practical Classification: Support Vector Machines"
 collection: publications
-permalink: /notebooks/classification_2
-excerpt: 'This notebook explores the implementation of basic classification algorithms. EE PMP 559, Spring 2019'
-date: 2019-05-02
-paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_6.ipynb'
+permalink: /notebooks/assignment_5
+excerpt: 'This notebook explores the implementation of basic classification algorithms. EE PMP 555, Spring 2022'
+date: 2022-05-02
+paperurl: 'https://github.com/dtabas/ee555/blob/master/homework_5.ipynb'
 ---
 ### Practical Classification: Support Vector Machines
 
@@ -19,10 +19,9 @@ The weights $\omega$ that minimize the loss function gives us the model that lab
 Logistic Regression isn't as robust to outliers, but its loss function is differentiable and important in many applications like neural networks. SVM is robust to outliers and easy to apply non-linear kernels to (when the data isn't separable by a straight line), but like linear regression with L1 regularization (LASSO), requires a slower algorithm to determine a loss-minimizing solution. We can draw on our intuition from regression the effect of the choice of norm has on the loss function to see how SVM is robust to outliers while logistic regression is not.
 
 Fig. 1
-![svm vs log loss](/images/notebooks_data/svm_vs_log_loss.png)
+![svm vs log loss](../images/notebooks_data/svm_vs_log_loss.png)
 
-As in the previous homework, we'll use sklearn. Read the manpage for [SVM](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) before starting the assignment. Most machine learning toolkits treat algorithms for the same type of task (in this case, classification) the same. You'll find that training and testing an SVM is _identical_ to training and testing the logistic regression classifier we generated in the previous homework. You are encouraged to reuse and, if helpful, simplify your code or the code found in the homework 5 solutions.
-
+As in the previous homework, we'll use sklearn. Read the manpage for [SVM](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) before starting the assignment. Most machine learning toolkits treat algorithms for the same type of task (in this case, classification) the same. You'll find that training and testing an SVM is _identical_ to training and testing the logistic regression classifier we generated in the previous homework. You are encouraged to reuse and, if helpful, simplify your code from the previous assignment.
 
 ```python
 import numpy as np
@@ -85,8 +84,7 @@ Train a logistic regression on the training data set X_train and Y_train. Comput
 
 ### Problem 3a
 
-In this problem we're going to look at the effect of an outlier on SVM and logistic regression. First, using the solution to the bonus problem in Homework 5, plot the data and the decision boundaries for both the SVM and logistic regression classifiers from problem 2.
-
+Plot the training data and the decision boundaries for both the SVM and logistic regression classifiers. Use sklearn’s model_object.decision_function() method to draw the decision boundaries of each model. A tutorial can be found [here](https://scikit-learn.org/stable/auto_examples/svm/plot_separating_hyperplane.html) for plotting an SVM’s decision function. The procedure for drawing the decision boundary is identical for the logistic regression model.
 
 ```python
 #insert your code here
@@ -94,13 +92,7 @@ In this problem we're going to look at the effect of an outlier on SVM and logis
 
 ### Problem 3b
 
-Now we'll add the outlier. With the new data sets X_train_outlier and Y_train_outlier, train a new SVM and logistic regression classifier. Plot the data and decision boundaries for both the newly trained SVM and logistic regression classifier. Note which classifier can handle the outlier and which can't even when the data is clearly linearly seperable. This is in part due to the fact that logistic regression loss never goes to zero for correctly classified points. Conversely, if this outlier is in fact not representative of real data, consider how this will effect test performance.
-
-
-```python
-X_train_outlier = np.vstack((X_train, np.array([5, -2.5])))  #adding the outlier
-Y_train_outlier = np.concatenate((Y_train, np.array([1.0])))   #adding the label for the outlier
-```
+Plot the test data and the decision boundaries for both the SVM and logistic regression classifiers (plotting the decision boundaries is the same as in part (a)).
 
 
 ```python

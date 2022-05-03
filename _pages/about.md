@@ -23,6 +23,15 @@ If you'd prefer to use a GUI, there is a [desktop GitHub client](https://desktop
 
 Submit your coding assignments along with the written portions to Canvas.
 
+Assignment 5: Classification using Support Vector Machines
+
+Due: May 9 11:59pm
+
+Submission: [Canvas](https://canvas.uw.edu/courses/1545435/assignments/7361827)
+
+Vew [web version](https://dtabas.github.io/eep555uw/notebooks/assignment_5), [source](https://github.com/dtabas/ee555/tree/main/hw5)
+===
+
 Assignment 4: ARX and Classification (Logistic Regression)"
 ===
 
