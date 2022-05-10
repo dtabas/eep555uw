@@ -1,17 +1,17 @@
 ---
 title: "Classification: SVM Kernels"
 collection: publications
-permalink: /notebooks/classification_3
-excerpt: 'This notebook explores the usages of kernel functions in SVM classification. EE PMP 559, Spring 2019'
-date: 2019-05-15
-paperurl: 'https://github.com/cpatdowling/ee559/blob/master/homework_7.ipynb'
+permalink: /notebooks/assignment_6
+excerpt: 'This notebook explores the usages of kernel functions in SVM classification. EE P 555, Spring 2022'
+date: 2022-05-10
+paperurl: 'https://github.com/dtabas/ee555/blob/master/homework_6.ipynb'
 ---
 ### Classification: SVM Kernels
 
 Suppose again we're given two classes and training data for each of the classes. As we've seen in the previous assignments, SVM and logistic regression find a _line_ that seperates them, so that when we see new samples we can classify them based on the line. Not all data is linearly seperable, however. Consider again the torus example in Fig. 1 from the previous homework's bonus problem: we can't seperate it with a straight line. 
 
 <center>Fig. 1</center>
-![alt](/images/notebooks_data/circle_class.png)
+![alt](../images/notebooks_data/circle_class.png)
 
 We can use something called a kernel function to push the data up to a higher dimension where _it is_ linearly seperable. In this homework we'll try putting a couple of kernel functions into practice, and see how parameter tuning effects our model. In machine learning, this is sometimes called the [kernel trick](https://en.wikipedia.org/wiki/Kernel_method). A kernel function can be thought of as a shortcut to a higher dimensional space given some data since it _only depends on the samples themselves_. We don't need to know anything explicit about higher order relationships, like when we specify a basis in the case of regression. A kernel function lets us implicitly see what the data would look like under a polynomial or Fourier basis.
 
@@ -19,19 +19,19 @@ In the video below we apply a polynomial kernel to the circular classification d
 
 
 <video width="640" height="480" align="center" controls>
-  <source src="/images/notebooks_data/polykernel.mp4" type="video/mp4">
+  <source src="../images/notebooks_data/polykernel.mp4" type="video/mp4">
 </video>
 
 
 The intersection of the planes forms a line that cuts directly through the data. Fig. 2 shows the line: new samples that fall inside the circle are labeled class 2, samples that fall outside are labeled class 1. This is an example of a polynomial kernel being used to seperate the data. We'll walk through coding example on the same data below.
 
 <center>Fig. 2</center>
-![alt](/images/notebooks_data/circle_class_boundary.png)
+![alt](../images/notebooks_data/circle_class_boundary.png)
 
 
 ```python
 #we'll look at the solution to the bonus problem from last week line by line
-#be sure to use other code like the precision and recall from the previous homework solutions
+#you can use other code like the precision and recall from the previous homework solutions
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -81,7 +81,7 @@ plt.show()
 ```
 
 
-![png](/images/notebooks_data/classification_3_1.png)
+![png](../images/notebooks_data/classification_3_1.png)
 
 
 ### Problem 1

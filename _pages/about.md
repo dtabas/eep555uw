@@ -23,6 +23,15 @@ If you'd prefer to use a GUI, there is a [desktop GitHub client](https://desktop
 
 Submit your coding assignments along with the written portions to Canvas.
 
+Assignment 6: SVM Kernels
+=== 
+
+Due: May 16th 11:59pm
+
+Submission: [Canvas](https://canvas.uw.edu/courses/1545435/assignments/7376769)
+
+View [web version](https://dtabas.github.io/eep555uw/notebooks/assignment_6), [source](https://github.com/dtabas/ee555/tree/main/hw6)
+
 Assignment 5: Classification using Support Vector Machines
 ===
 
