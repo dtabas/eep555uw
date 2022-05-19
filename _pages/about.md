@@ -23,6 +23,15 @@ If you'd prefer to use a GUI, there is a [desktop GitHub client](https://desktop
 
 Submit your coding assignments along with the written portions to Canvas.
 
+Assignment 7: Neural Networks
+=== 
+
+Due: May 26 11:59pm
+
+Submission: Canvas
+
+View [source](https://github.com/dtabas/ee555/tree/main/hw7)
+
 Assignment 6: SVM Kernels
 === 
 
